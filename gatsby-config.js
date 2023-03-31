@@ -2,9 +2,19 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  siteMetadata: {
-    title: `gatsby-april`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteMetadata: {
+    title: "My First Gatsby Site",
   },
-  plugins: ["gatsby-plugin-sass"]
+  plugins: [
+            "gatsby-plugin-sass",
+            "gatsby-plugin-image",
+             "gatsby-plugin-sharp",
+        {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+],
 };
