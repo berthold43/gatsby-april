@@ -1,0 +1,100 @@
+---
+title: "Another Post"
+date: "2021-07-24"
+slug: "another-post"
+---
+
+Here's another post! It's even better than the first one!
+--------------------------------
+
+---
+title: "Another Post"
+date: "2023-04-01"
+slug: "another-post"
+neuronett_image: "./neuronett.png"
+neuronett_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
+neuronett_image_credit_text: "Christopher Ayme"
+neuronett_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+Here's another post! It's even better than the first one!
+
+
+---
+
+-----------------------------
+---
+title: "My First Post"
+date: "2021-07-23"
+slug: "my-first-post"
+---
+
+This is my first blog post! Isn't it *great*?
+
+Some of my **favorite** things are:
+
+* Petting dogs
+* Singing
+* Eating potato-based foods
+
+--------------------------------
+
+---
+title: "Yet Another Post"
+date: "2021-07-25"
+slug: "yet-another-post"
+---
+
+Wow look at all this content. How do they do it?
+
+----------------------
+    <p>Posted: {data.mdx.frontmatter.date}</p>
+    <GatsbyImage
+      image={image}
+      alt={data.mdx.frontmatter.hero_image_alt}
+    />
+-----------------------
+
+import * as React from 'react'
+import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+
+const BlogPost = ({ data, children }) => {
+  const image = getImage(data.mdx.frontmatter.hero_image)
+
+
+  return (
+       <Layout pageTitle={data.mdx.frontmatter.title}>
+      <p>{data.mdx.frontmatter.date}</p>
+      {children}
+    </Layout>
+  )
+}
+
+export const query = graphql`
+  query($id: String) {
+    mdx(id: {eq: $id}) {
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+        hero_image_alt
+        hero_image_credit_link
+        hero_image_credit_text
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+`
+
+export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />
+
+
+
+export default BlogPost
+
