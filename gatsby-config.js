@@ -3,7 +3,7 @@
  */
 module.exports = {
     siteMetadata: {
-    title: "My First Gatsby Site",
+    title: "Mental hälsa",
   },
   plugins: [
             "gatsby-plugin-sass",
