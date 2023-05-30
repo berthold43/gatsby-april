@@ -2,7 +2,8 @@ import * as React from 'react'
 import Layout from '../components/layout'
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Den harmoniska kroppen">
+     <Layout pageTitle="Den harmoniska kroppen">
+     
 
 <h3>Att sitta ner</h3>
 <p>Barnet är visserligen redo att andas i samma ögonblick som det föds, men det kan varken stå eller gå. Medan den lilla kycklingen springer omkring från sin första levnadsdag krävs det mer än ett år innan människobarnet uppnår samma färdighet.</p>

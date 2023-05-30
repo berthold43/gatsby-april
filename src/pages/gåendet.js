@@ -1,14 +1,15 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo'
+
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Den harmoniska kroppen">
+   <Layout pageTitle="Den harmoniska kroppen">
 <StaticImage
         alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
         src="../images/walk.jpg"
 />
-
  <h3>Att gå</h3>
    <p>Genom sin förmåga attt stå upprätt intar människan en position mellan himmel och jord. Så tar vi det allra första steget. Vi är inte längre bundna vid en och samma plats. Världen öppnar sig framför oss ett fält att upptäcka och ett fält att förändra.</p>
 <p>Med röstens hjälp har vi lärt känna den sfär av utstrålning som öppnar sig utifrån vårt centrum. Nu kan vi förflytta detta centrum. Universum blir en sfär vars centrum finns överallt och periferin ingenstans. Så upplever vi det subjektivt. Vart vi än tar vägen upplever vi jorden som en sfär, vars centrum är vi själva. Hur vi än vandrar mot horisonten kan vi aldrig nå den. Överallt är det upplevelsen av ett centrum som dominerar och periferin som drar sig undan för vårt sökande.</p>

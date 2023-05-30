@@ -55,3 +55,18 @@ const BlogPost = () => {
 export const Head = () => <Seo title="Super Cool Blog Posts" />
 
 export default BlogPost
+
+--------------------------
+<Layout pageTitle="Home Page">
+      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <StaticImage
+        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+        src="../images/walk.jpg"
+      />
+    </Layout>
+-------------------
+<Layout pageTitle="Den harmoniska kroppen">
+<StaticImage
+        alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
+        src="../images/walk.jpg"
+/>

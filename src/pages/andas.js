@@ -1,8 +1,16 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo'
+
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Den harmoniska kroppen">
+     <Layout pageTitle="Den harmoniska kroppen">
+<StaticImage
+        alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
+        src="../images/walk.jpg"
+/>
+     
 
 <h3>Att andas</h3> 
 <p>Andningen omspänner och mäter exakt ut hela vår livslängd, från det första skriket till det sista andetaget. Det är redo att fungera från det vi föds. Det är inte vår egen ansträngning och livserfarenhet som gör att  vi kan lita på den, utan det är den djupt liggande vishet som handlar i vårt omedvetna redan under fosterstadiet. Vid födelsen har hjärtat redan slagit sedan länge, och andningen anpassar undan för undan sin rytm till pulsen till dess den stabiliseras omkring förhållandet ett andetag på fyra hjärtslag. Andningens och hjärtverksamhetens regleringscentra ligger intill varandra i förlängda märgen, hjärnans allra djupaste och mest omedvetna skikt.</p>
